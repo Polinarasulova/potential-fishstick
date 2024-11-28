@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Магазин бижутерии из алмазного стекла</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>Бижутерия из алмазного стекла</h1>
+    </header>
+    <nav>
+        <ol>
+            <li><a href="#products">Самые популярные товары</a></li>
+            <li><a href="#video">Промо-видео про бижутерию из алмазного стекла</a></li>
+            <li><a href="#audio">Аудио-ознакомление с товаром</a></li>
+            <li><a href="#table">Список товаров в виде таблицы</a></li>
+            <li><a href="#contact">Обратная связь</a></li>
+        </ol>
+    </nav>
+    <section id="products">
+        <h2>Популярные товары</h2>
+        <div class="product">
+            <div class="product-item">
+                <h3>1. Розовый кварц</h3>
+                <img alt="Изображение розового кварца" height="400" src="i.jpg" width="400"/>
+            </div>
+            <div class="product-item">
+                <h3>2. Прозрачный кристал</h3>
+                <img alt="Изображение прозрачного кристалла" height="400" src="p.jpg" width="400"/>
+            </div>
+        </div>
+    </section>
+    <section id="video">
+        <h2>Промо-видео</h2>
+        <video controls width="400">
+            <source src="polina.mp4" type="video/mp4"/>
+            Ваш браузер не поддерживает видео.
+        </video>
+    </section>
+    <section id="audio">
+        <h2>Аудио-приветствие</h2>
+        <audio controls>
+            <source src="azi.ogg" type="audio/ogg"/>
+            Ваш браузер не поддерживает аудио.
+        </audio>
+    </section>
+    <section id="table">
+        <h2>Список товаров</h2>
+        <table>
+            <tr>
+                <th>Название</th>
+                <th>Цена</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>Розовый кварц</td>
+                <td>382 руб.</td>
+                <td>Эфект "Хамелеон" бело-розового кристала</td>
+            </tr>
+            <tr>
+                <td>Прозрачный кристал</td>
+                <td>400 руб.</td>
+                <td>Прозрачный кристалл очень ярко блестит на солнце и отдает различными цветами как "Хамелеон"</td>
+            </tr>
+        </table>
+    </section>
+    <section id="contact">
+        <h2>Обратная связь</h2>
+        <form>
+            <div>
+                <label for="name">Имя</label>
+                <input id="name" name="name" required type="text"/>
+            </div>
+            <div>
+                <label for="email">Электронная почта</label>
+                <input id="email" name="email" required type="email"/>
+            </div>
+            <div>
+                <label for="category">Категория запроса</label>
+                <select id="category" name="category" required>
+                    <option value="order">Сделать заказ</option>
+                    <option value="add">Добавить что-то уже в сделанный заказ</option>
+                    <option value="question">Вопрос по заказу (доставке)</option>
+                    <option value="support">Техническая поддержка</option>
+                </select>
+            </div>
+            <button type="submit">
+            Сообщение
+            </label>
+            <textarea id="message" name="message" required="" rows="4"></textarea>
+           </div>
+           <div>
+             Отправить
+            </button>
+           </form>
+          </section>
+          <footer>
+           <p>
+             2024 Магазин бижутерии алмазного стекла. 
+           </p>
+          </footer>
+         </body>
+        </html>
+                </select>

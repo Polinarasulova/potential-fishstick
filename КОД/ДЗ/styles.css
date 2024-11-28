@@ -1,0 +1,69 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fce4ec; 
+    color: #000000; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок */
+header {
+    background-color: #f48fb1; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Навигация */
+nav {
+    background-color: #f1a7b9; 
+}
+
+nav ol {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0;
+}
+
+
+nav li {
+    display: inline; /* Горизонтальное расположение элементов */
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+/* Секции */
+section {
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8bbd0; 
+}
+
+/* Заголовки секций */
+h2 {
+    color: #ffffff; 
+}
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ff000d; /* Розовая рамка */
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+/* Форма обратной связи */
+form div {
+    margin-bottom: 15px;
+}
