@@ -1,69 +1,106 @@
+/* styles.css */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #fce4ec; 
-    color: #000000; 
-    margin: 0;
-    padding: 0;
+    background-color: #ff9fea; /* Цвет фона страницы в HEX */
+    background-image: url('background.jpg'); /* Фоновое изображение */
+    background-repeat: no-repeat; /* Не повторять изображение */
+    background-position: center; /* Центрировать изображение */
+    font-family: 'Roboto', sans-serif; /* Шрифт для всего тела */
 }
 
-/* Заголовок */
 header {
-    background-color: #f48fb1; 
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background: linear-gradient(to right, rgba(253, 187, 215, 0.8), rgba(247, 6, 58, 0.8)); /* Градиент для заголовка */
+    padding: 20px; /* Отступы */
+    text-align: center; /* Выравнивание текста по центру */
+    color: white; /* Цвет текста в заголовке */
 }
 
-/* Навигация */
-nav {
-    background-color: #f1a7b9; 
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif; /* Одинаковый шрифт для заголовков */
 }
 
-nav ol {
-    list-style-type: none; /* Убираем маркеры списка */
-    padding: 0;
-}
-
-
-nav li {
-    display: inline; /* Горизонтальное расположение элементов */
-    margin-right: 15px;
+h2 {
+    color: rgb(0, 0, 0); /* Устанавливаем цвет текста для заголовков h2 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень для заголовков h2 */
 }
 
 nav a {
-    color: white;
+    color: #333; /* Цвет текста ссылок */
     text-decoration: none; /* Убираем подчеркивание */
+    margin: 0 10px; /* Отступы между ссылками */
 }
 
-/* Секции */
-section {
-    margin: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #f8bbd0; 
+nav a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
 }
 
-/* Заголовки секций */
-h2 {
-    color: #ffffff; 
-}
-
-/* Таблица */
 table {
-    width: 100%;
-    border-collapse: collapse;
+    border: 1px solid #ff7474; /* Граница таблицы */
+    width: 100%; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем двойные границы */
+    margin: 20px 0; /* Отступы вокруг таблицы */
 }
 
 th, td {
-    border: 1px solid #ff000d; /* Розовая рамка */
-    padding: 10px;
-    text-align: left;
+    border: 1px solid #f80000; /* Граница ячеек */
+    padding: 10px; /* Внутренние отступы */
+    text-align: left; /* Выравнивание текста */
 }
 
+.product-item {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для блока товара */
+    margin: 10px; /* Отступы между товарами */
+    padding: 10px; /* Внутренние отступы */
+    background-color: white; /* Фон блока товара */
+}
 
+.product-item img {
+    width: 100%; /* Устанавливаем ширину изображений на 100% */
+    max-width: 400px; /* Максимальная ширина 400px */
+    transition: opacity 0.3s; /* Плавный переход для эффекта наведения */
+}
 
-/* Форма обратной связи */
+.product-item img:hover {
+    opacity: 0.8; /* Прозрачность при наведении */
+}
+
+button {
+    background: linear-gradient(to right, #d610cc, #d40a25); /* Градиент для кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    padding: 10px 20px; /* Отступы */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background 0.3s; /* Плавный переход фона */
+}
+
+button:hover {
+    background: linear-gradient(to right, #fcfcfc, #d610cc); /* Изменение фона при наведении */
+}
+
+/* Стили для формы обратной связи */
+form {
+    margin: 20px 0; /* Отступы вокруг формы */
+}
+
 form div {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Отступы между полями формы */
+}
+
+label {
+    display: block; /* Отображение меток как блочных элементов */
+    margin-bottom: 5px; /* Отступ снизу для меток */
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%; /* Ширина полей ввода на 100% */
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Граница полей */
+    border-radius: 5px; /* Закругленные углы */
+}
+
+textarea {
+    resize: vertical; /* Позволяем изменять размер только по вертикали */
 }
